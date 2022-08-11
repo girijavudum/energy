@@ -1,0 +1,25 @@
+mat-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  ul {
+    li {
+      list-style:none;
+    }
+  }
+  button {
+    outline: none;
+    border: 0;
+    background:transparent;
+  }
+  .user {
+    font-size: 30px;
+    text-align: center;
+    border-radius:none;
+  }
+  mat-toolbar {
+    background:rgb(245, 232, 232);
+  }
+  

@@ -1,0 +1,43 @@
+<br>
+<div class="container">
+<div class="row">
+    <div class="col-4">
+  <mat-form-field>
+    <mat-label>select country</mat-label>
+  <mat-select>
+    
+    <mat-option *ngFor='let country of countries' [value]="countries">{{country}} </mat-option>
+  </mat-select>
+</mat-form-field>
+</div>
+<div class="col-4">
+  <mat-form-field>
+    <mat-label>select indicatorType</mat-label>
+  <mat-select>
+   
+    <mat-option *ngFor='let indicator of indicatorTypes' [value]="indicatorTypes">{{indicator}} </mat-option>
+  </mat-select>
+</mat-form-field>
+</div>
+<div class="col-4">
+  <mat-form-field>
+    <mat-label>select year</mat-label>
+  <mat-select>
+    
+    <mat-option *ngFor='let year of years' [value]="years">{{year}} </mat-option>
+  </mat-select>
+</mat-form-field>
+</div>
+</div>
+</div>
+<br><br>
+<div>
+  <canvas
+        baseChart
+        [data]="salesData"
+        [type]="'bar'"
+        [options]="chartOptions"
+      >
+      </canvas>
+</div>
+
