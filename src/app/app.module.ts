@@ -16,6 +16,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import {MatSelectModule} from '@angular/material/select';
 import { NgChartsModule } from 'ng2-charts';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -39,7 +40,8 @@ import { NgChartsModule } from 'ng2-charts';
     MatIconModule,
     MatDividerModule,
     MatListModule,
-    MatSelectModule
+    MatSelectModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],

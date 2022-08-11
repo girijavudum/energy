@@ -8,3 +8,6 @@
     <router-outlet></router-outlet>
   </mat-drawer-content>
 </mat-drawer-container>
+<li *ngFor="let user of userArray">
+  {{user | json}}
+</li>
